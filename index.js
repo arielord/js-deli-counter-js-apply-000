@@ -1,6 +1,9 @@
-function takeANumber(curr, name){
-  curr.push(name);
-  return "Welcome, " + name + ". You are number " + curr.length + " in line.";
+function takeANumber(curr){
+  if (curr.length === 0){
+    curr.push(1);
+  }
+  curr.push(curr[curr.length]+1);
+  return "Welcome. You are number " + curr.length + " in line.";
 }
 
 function nowServing(curr){
